@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sort a HTML Table Numerically</title>
+<style>
+table {
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+</style>
+</head>
+<body>
+
+<p>Click the button to sort the table numerically:</p>
+<p><button onclick="sortTableNumber(0)">Sort</button></p>
+
+<table id="myTable">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Berglunds snabbkop</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>North/South</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Alfreds Futterkiste</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Koniglich Essen</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Magazzini Alimentari Riuniti</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Paris specialites</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Island Trading</td>
+  </tr>
+ 
+</table>
+
+<script>
+function sortTableNumber(n) {
+  var table, rows, switching, i, x, y, shouldSwitch , dir, switchcount = 0;
+  table = document.getElementById("myTable");
+  switching = true;
+  dir = "asc";
+  
+  while (switching) {
+    
+    switching = false;
+    rows = table.rows;
+    
+    for (i = 1; i < (rows.length - 1); i++) {
+      
+      shouldSwitch = false;
+      
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      
+      
+      
+      if (dir == "asc") {
+        if (Number(x.innerHTML) > Number(y.innerHTML)) {     
+        shouldSwitch = true;
+        break;
+      }
+      } else if (dir == "desc") {
+        if (Number(x.innerHTML) < Number(y.innerHTML)) {  
+          // If so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+      
+    }
+    if (shouldSwitch) {      
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount ++;
+    }else {      
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
