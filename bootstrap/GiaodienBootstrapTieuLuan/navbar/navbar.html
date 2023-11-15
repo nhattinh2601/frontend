@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="headers.css">
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#goTop">
+    <header class="d-flex justify-content-center py-3 bg-white" id="topbar">
+        <div class="d-inline-block ">
+            <a class="navbar-brand mr-1" href="#"><img class="img-fluid logo" alt=""
+                    src="C:\Users\tinh2\Desktop\GiaodienBootstrapTieuLuan\hinhanh\logo.png"></a>
+        </div>
+        <div class="d-inline-block">
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+            </form>
+        </div>
+
+        <div class="d-inline-block " style="align-items: center;">
+            <a href="#">
+                <i class="fa fa-shopping-cart" aria-hidden="true" style="color:#999; font-size: 30px;"></i>
+                <span class="unica-sl-cart" style="border:none;">
+                </span>
+            </a>
+        </div>
+
+        <a href="https://example.com" class="btn btn-primary margin-button-header">Login</a>
+        <a href="https://example.com" class="btn btn-primary margin-button-header">Sign up</a>
+
+    </header>
+
+    <div class=" col-sm-3">
+        <nav>
+            <ul>
+                <li class="dropdown"><a href="#"><i class="fa fa-language"></i>&nbsp;Ngoại ngữ</a>
+                    <ul>
+                        <li><a href="#">Tất cả ngoại ngữ</a></li>
+                        <li><a href="#">Tiếng Anh</a></li>
+                        <li><a href="#">Tiếng Đức</a></li>                    
+                        <li><a href="#">Tiếng Hàn</a></li>                    
+                        <li><a href="#">Tiếng Nhật</a></li>                    
+                        <li><a href="#">Tiếng Trung</a></li>                    
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#"><i class="fas fa-chart-line"></i>&nbsp;Marketing</a>
+                    <ul>
+                        <li><a href="#">Tất cả Marketing</a></li>
+                        <li><a href="#">Facebook Marketing</a></li>
+                        <li><a href="#">Zalo Marketing</a></li>                    
+                        <li><a href="#">Google Ads</a></li>                                             
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#"><i class="fa fa-desktop"></i>&nbsp;Tin học văn phòng</a>
+                    <ul>
+                        <li><a href="#">Tất cả Tin học văn phòng</a></li>
+                        <li><a href="#">Word</a></li>
+                        <li><a href="#">Excel</a></li>                    
+                        <li><a href="#">Power Point</a></li>                                             
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#"><i class="fas fa-search-dollar"></i>&nbsp;Tài chính kế toán</a>
+                    <ul>
+                        <li><a href="#">Tất cả Tài chính kế toán</a></li>
+                        <li><a href="#">Kế toán</a></li>
+                        <li><a href="#">Tài chính</a></li>                    
+                        <li><a href="#">Chứng khoán</a></li>                                             
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#"><i class="fas fa-lightbulb"></i>&nbsp;Kỹ năng</a>
+                    <ul>
+                        <li><a href="#">Tất cả Kỹ năng</a></li>
+                        <li><a href="#">Kỹ năng lãnh đạo</a></li>
+                        <li><a href="#">Kỹ năng mềm</a></li>                    
+                        <li><a href="#">Kỹ năng phát triển bản thân</a></li>                                             
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#"><i class="fa fa-code"></i>&nbsp;Công nghệ</a>
+                    <ul>
+                        <li><a href="#">Tất cả Công nghệ thông tin</a></li>
+                        <li><a href="#">Dữ liệu</a></li>
+                        <li><a href="#">Công nghệ thông tin</a></li>                    
+                        <li><a href="#">Sữa chữa, chế tạo</a></li>                                             
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    
+    <!-- slide-show -->
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide col-sm-6 slideshow_homepage" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">                
+                <img src="C:\Users\tinh2\Desktop\GiaodienBootstrapTieuLuan\hinhanh\slideshow_1.jpg" alt="Los Angeles"
+                class="d-block w-100 image-slideshow"></img>
+            </div>
+            <div class="carousel-item">
+                <img src="C:\Users\tinh2\Desktop\GiaodienBootstrapTieuLuan\hinhanh\slideshow_2.jpg" alt="Chicago"
+                    class="d-block w-100 image-slideshow">
+            </div>
+            <div class="carousel-item">
+                <img src="C:\Users\tinh2\Desktop\GiaodienBootstrapTieuLuan\hinhanh\slideshow_3.jpg" alt="New York"
+                    class="d-block w-100 image-slideshow">
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div class="b-example-divider"></div>
+    <div id="topbar">                   
+    </div>
+    <div class="container-fluid pt-5 ">
+        <div class="row">
+
+            <div class="center_body">
+                
+                <br>
+                <h3 class="fw-bold">Top khóa học bán chạy</h3>
+                <br>
+                <!-- Nội dung khóa học -->
+                <div class="bg-white" >
+                    <!-- 1 row bên trong 4 col  -->
+                    <div class=" row color-background">                       
+                        <div class=" width-course bg-white p-1 rounded-3 m-3" >
+                            <img class="img-course" src="C:\Users\tinh2\Desktop\GiaodienBootstrapTieuLuan\hinhanh\facebook-marketing-a-z_m_1555557477.jpg" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                              <h6 class="card-title fw-bold">Facebook Marketing từ A - Z</h6>
+                              <div class="d-inline-block">
+                                <p class="text-decoration-line-through">1.000.000 đ</p>
+                                <p class="card-text fw-bold">799.000 đ</p>                              
+                              </div>
+                              
+                              <div class="d-inline-block">
+                                <span style="padding-top: 3px">
+                                    <i class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i> </span>
+                              </div>                              
+                              <a href="#" class="btn btn-primary w-100" >Thêm vào giỏ hàng</a>
+                            </div>
+                        </div>
+                        
+                        <div class=" width-course bg-white p-1 rounded-3 m-3" >
+                            <img class="img-course" src="C:\Users\tinh2\Desktop\GiaodienBootstrapTieuLuan\hinhanh\facebook-marketing-a-z_m_1555557477.jpg" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                              <h6 class="card-title fw-bold">Facebook Marketing từ A - Z</h6>
+                              <div class="d-inline-block">
+                                <p class="text-decoration-line-through">1.000.000 đ</p>
+                                <p class="card-text fw-bold">799.000 đ</p>                              
+                              </div>
+                              
+                              <div class="d-inline-block">
+                                <span style="padding-top: 3px">
+                                    <i class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i> </span>
+                              </div>                              
+                              <a href="#" class="btn btn-primary w-100" >Thêm vào giỏ hàng</a>
+                            </div>
+                        </div>
+
+                        <div class=" width-course bg-white p-1 rounded-3 m-3" >
+                            <img class="img-course" src="C:\Users\tinh2\Desktop\GiaodienBootstrapTieuLuan\hinhanh\facebook-marketing-a-z_m_1555557477.jpg" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                              <h6 class="card-title fw-bold">Facebook Marketing từ A - Z</h6>
+                              <div class="d-inline-block">
+                                <p class="text-decoration-line-through">1.000.000 đ</p>
+                                <p class="card-text fw-bold">799.000 đ</p>                              
+                              </div>
+                              
+                              <div class="d-inline-block">
+                                <span style="padding-top: 3px">
+                                    <i class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i> </span>
+                              </div>                              
+                              <a href="#" class="btn btn-primary w-100" >Thêm vào giỏ hàng</a>
+                            </div>
+                        </div>
+
+                        <div class=" width-course bg-white p-1 rounded-3 m-3" >
+                            <img class="img-course" src="C:\Users\tinh2\Desktop\GiaodienBootstrapTieuLuan\hinhanh\facebook-marketing-a-z_m_1555557477.jpg" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                              <h6 class="card-title fw-bold">Facebook Marketing từ A - Z</h6>
+                              <div class="d-inline-block">
+                                <p class="text-decoration-line-through">1.000.000 đ</p>
+                                <p class="card-text fw-bold">799.000 đ</p>                              
+                              </div>
+                              
+                              <div class="d-inline-block">
+                                <span style="padding-top: 3px">
+                                    <i class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i> </span>
+                              </div>                              
+                              <a href="#" class="btn btn-primary w-100" >Thêm vào giỏ hàng</a>
+                            </div>
+                        </div>                                                                                              
+                    </div>
+                    
+                </div>
+                
+                <br>
+                <h3 class="fw-bold">Học nhiều trong tuần</h3>
+                <br>
+                <!-- Nội dung khóa học -->
+                <div class="bg-white" >
+                    <!-- 1 row bên trong 4 col  -->
+                    <div class=" row color-background">                       
+                        <div class=" width-course bg-white p-1 rounded-3 m-3" >
+                            <img class="img-course" src="C:\Users\tinh2\Desktop\GiaodienBootstrapTieuLuan\hinhanh\facebook-marketing-a-z_m_1555557477.jpg" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                              <h6 class="card-title fw-bold">Facebook Marketing từ A - Z</h6>
+                              <div class="d-inline-block">
+                                <p class="text-decoration-line-through">1.000.000 đ</p>
+                                <p class="card-text fw-bold">799.000 đ</p>                              
+                              </div>
+                              
+                              <div class="d-inline-block">
+                                <span style="padding-top: 3px">
+                                    <i class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i> </span>
+                              </div>                              
+                              <a href="#" class="btn btn-primary w-100" >Thêm vào giỏ hàng</a>
+                            </div>
+                        </div>
+                        
+                        <div class=" width-course bg-white p-1 rounded-3 m-3" >
+                            <img class="img-course" src="C:\Users\tinh2\Desktop\GiaodienBootstrapTieuLuan\hinhanh\facebook-marketing-a-z_m_1555557477.jpg" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                              <h6 class="card-title fw-bold">Facebook Marketing từ A - Z</h6>
+                              <div class="d-inline-block">
+                                <p class="text-decoration-line-through">1.000.000 đ</p>
+                                <p class="card-text fw-bold">799.000 đ</p>                              
+                              </div>
+                              
+                              <div class="d-inline-block">
+                                <span style="padding-top: 3px">
+                                    <i class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i> </span>
+                              </div>                              
+                              <a href="#" class="btn btn-primary w-100" >Thêm vào giỏ hàng</a>
+                            </div>
+                        </div>
+
+                        <div class=" width-course bg-white p-1 rounded-3 m-3" >
+                            <img class="img-course" src="C:\Users\tinh2\Desktop\GiaodienBootstrapTieuLuan\hinhanh\facebook-marketing-a-z_m_1555557477.jpg" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                              <h6 class="card-title fw-bold">Facebook Marketing từ A - Z</h6>
+                              <div class="d-inline-block">
+                                <p class="text-decoration-line-through">1.000.000 đ</p>
+                                <p class="card-text fw-bold">799.000 đ</p>                              
+                              </div>
+                              
+                              <div class="d-inline-block">
+                                <span style="padding-top: 3px">
+                                    <i class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i> </span>
+                              </div>                              
+                              <a href="#" class="btn btn-primary w-100" >Thêm vào giỏ hàng</a>
+                            </div>
+                        </div>
+
+                        <div class=" width-course bg-white p-1 rounded-3 m-3" >
+                            <img class="img-course" src="C:\Users\tinh2\Desktop\GiaodienBootstrapTieuLuan\hinhanh\facebook-marketing-a-z_m_1555557477.jpg" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                              <h6 class="card-title fw-bold">Facebook Marketing từ A - Z</h6>
+                              <div class="d-inline-block">
+                                <p class="text-decoration-line-through">1.000.000 đ</p>
+                                <p class="card-text fw-bold">799.000 đ</p>                              
+                              </div>
+                              
+                              <div class="d-inline-block">
+                                <span style="padding-top: 3px">
+                                    <i class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i> </span>
+                              </div>                              
+                              <a href="#" class="btn btn-primary w-100" >Thêm vào giỏ hàng</a>
+                            </div>
+                        </div>                                                                                              
+                    </div>
+                    
+                </div>
+
+                <br/>
+                <h3 class="fw-bold">Khóa học mới ra mắt</h3>
+                <br/>
+                <!-- Nội dung khóa học -->
+                <div class="bg-white" >
+                    <!-- 1 row bên trong 4 col  -->
+                    <div class=" row color-background">                       
+                        <div class=" width-course bg-white p-1 rounded-3 m-3" >
+                            <img class="img-course" src="C:\Users\tinh2\Desktop\GiaodienBootstrapTieuLuan\hinhanh\facebook-marketing-a-z_m_1555557477.jpg" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                              <h6 class="card-title fw-bold">Facebook Marketing từ A - Z</h6>
+                              <div class="d-inline-block">
+                                <p class="text-decoration-line-through">1.000.000 đ</p>
+                                <p class="card-text fw-bold">799.000 đ</p>                              
+                              </div>
+                              
+                              <div class="d-inline-block">
+                                <span style="padding-top: 3px">
+                                    <i class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i> </span>
+                              </div>                              
+                              <a href="#" class="btn btn-primary w-100" >Thêm vào giỏ hàng</a>
+                            </div>
+                        </div>
+                        
+                        <div class=" width-course bg-white p-1 rounded-3 m-3" >
+                            <img class="img-course" src="C:\Users\tinh2\Desktop\GiaodienBootstrapTieuLuan\hinhanh\facebook-marketing-a-z_m_1555557477.jpg" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                              <h6 class="card-title fw-bold">Facebook Marketing từ A - Z</h6>
+                              <div class="d-inline-block">
+                                <p class="text-decoration-line-through">1.000.000 đ</p>
+                                <p class="card-text fw-bold">799.000 đ</p>                              
+                              </div>
+                              
+                              <div class="d-inline-block">
+                                <span style="padding-top: 3px">
+                                    <i class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i> </span>
+                              </div>                              
+                              <a href="#" class="btn btn-primary w-100" >Thêm vào giỏ hàng</a>
+                            </div>
+                        </div>
+
+                        <div class=" width-course bg-white p-1 rounded-3 m-3" >
+                            <img class="img-course" src="C:\Users\tinh2\Desktop\GiaodienBootstrapTieuLuan\hinhanh\facebook-marketing-a-z_m_1555557477.jpg" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                              <h6 class="card-title fw-bold">Facebook Marketing từ A - Z</h6>
+                              <div class="d-inline-block">
+                                <p class="text-decoration-line-through">1.000.000 đ</p>
+                                <p class="card-text fw-bold">799.000 đ</p>                              
+                              </div>
+                              
+                              <div class="d-inline-block">
+                                <span style="padding-top: 3px">
+                                    <i class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i> </span>
+                              </div>                              
+                              <a href="#" class="btn btn-primary w-100" >Thêm vào giỏ hàng</a>
+                            </div>
+                        </div>
+
+                        <div class=" width-course bg-white p-1 rounded-3 m-3" >
+                            <img class="img-course" src="C:\Users\tinh2\Desktop\GiaodienBootstrapTieuLuan\hinhanh\facebook-marketing-a-z_m_1555557477.jpg" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                              <h6 class="card-title fw-bold">Facebook Marketing từ A - Z</h6>
+                              <div class="d-inline-block">
+                                <p class="text-decoration-line-through">1.000.000 đ</p>
+                                <p class="card-text fw-bold">799.000 đ</p>                              
+                              </div>
+                              
+                              <div class="d-inline-block">
+                                <span style="padding-top: 3px">
+                                    <i class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i><i
+                                        class="fa fa-star co-or" aria-hidden="true"></i> </span>
+                              </div>                              
+                              <a href="#" class="btn btn-primary w-100" >Thêm vào giỏ hàng</a>
+                            </div>
+                        </div>                                                                                              
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>    
+
+        <div class="b-example-divider"></div>
+        <footer class="py-3 my-4 bg-white p-0 m-0">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2023 EDU123</p>
+        </footer>
+    
+        <!-- Back to top button -->
+        <div id="goTop">
+            <a href="#topbar" id="goTopBtn">
+                <i class="fas fa-arrow-alt-circle-up"></i>
+            </a>
+        </div>        
+        <script src="./goTopBtn.js"></script>
+    
+</body>
+
+</html>
